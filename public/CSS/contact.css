@@ -1,0 +1,367 @@
+*{
+    margin : 0;
+    padding : 0 ;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100vw;
+}
+
+p{
+    padding : 2em ;
+    max-width: 1000px;
+}
+
+.heading h1{
+    font-size: 4rem;
+    font-weight: 100;
+    padding: 0 2rem;
+    text-transform:uppercase;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    color: #009686;
+    text-shadow: 2px 3px 4px #0096bb;
+margin-bottom: 4rem;
+}
+
+h2{
+    padding: 0 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 20, 147 ,0.5) ;
+    font-size: 2rem;
+}
+p{
+    padding: 0.5rem;   
+    font-size: 1rem;
+    margin: 0 10rem;
+}
+
+.contact-icons{
+    font-size: 3rem;
+    margin-right: 1rem;
+    opacity: 1;
+    text-align: center;
+    color: rgba(255, 20, 147); 
+    border: 1px solid #0096bb;
+    padding: 0.2rem 1rem;
+    border-radius: 100rem;
+    width: 3rem;
+}
+
+.contact-icons i:hover{
+    opacity: 0.7;
+}
+
+.contact-element h3{
+    margin-top: 1.7rem;
+}
+
+.contact-element h3 a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+
+.contact-element h3 a:hover{
+    opacity: 0.8;
+}
+
+.contact-element{
+    display: flex;
+    padding: 1rem 1.5rem;
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: center; */
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.volunteer-section h2{
+    text-align: center;
+    margin: 1.5rem 0;   
+}
+
+.volunteer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Form Styles */
+
+#feed-form{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 20, 147 ,0.15);
+}
+
+.inp-form
+{   
+    margin-bottom: 1rem;
+    border: #fff;
+    transition: 1s ease;
+}
+
+input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type=date]{
+    width: 17.58rem;
+    margin-right: 1rem;
+}
+
+input[type=radio]{
+    margin: 0 0.3rem;
+}
+
+input[type=text]
+{
+    
+    align-items: stretch;
+    width: 19.87rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=text]:focus
+{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.num
+{
+    width: 19.87rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.num:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.email-id
+{
+    
+    width: 19.87rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.email-id:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.txtarea
+{
+    padding : 10px;
+    width: 40rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.txtarea:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.feed-h2
+{
+    font-size: 60px;
+    align-items: center;
+    margin-left: 13vw;
+    margin-bottom: 60px;
+    font-weight: 250;
+    color: rgba(0,150,134,0.5) ;
+    text-shadow: 2px 3px 4px rgba(0,150,134,0.2);
+}
+
+.submitBtn
+{
+    display: inline-block;
+    /* padding: 15px 25px; */
+    width: 15rem;
+    height: 4rem;
+    
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    outline: none;
+    border: 1px solid rgba(255, 20, 147);
+    padding: 0px 40px;
+}
+.submitBtn:hover
+{
+    background-color: rgba(0,150,134,0.4);
+    border: rgba(0,150,134,1);
+    opacity: 0.8;
+}
+
+
+/* Form Style Ends */
+
+
+.partner-with-us h2{
+    text-align: center;
+    padding: 1rem;
+    margin: 5rem 0;
+    font-size: 3rem;
+}
+
+.partner-with-us img{
+    width: 98.7vw;
+    max-height: 25rem;
+}
+
+.partner-with-us p {
+    margin: 0 2rem;
+}
+
+
+
+/* Footer Section */
+
+#footer{
+    padding: 2rem;
+    background-color: rgba(255, 20, 147, 0.4);
+}
+
+#footer ul li{
+    list-style-type: none;
+}
+
+
+
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer a:hover{
+    opacity: 0.7;
+}
+
+
+.footer-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.copyright-text{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.social-icons-size{
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    opacity: 1;
+    text-align: center;
+}
+
+.social-icons-size i:hover{
+    opacity: 0.7;
+}
+
+.our-initiatives, .contact-us{
+    padding: 1rem;
+}
+
+
+
+/* Media querry tags */
+
+@media (max-width: 500px){
+
+    .heading h1{
+        font-size: 3rem;
+    }
+    .contact-icons{
+        font-size: 2rem;
+        padding: 0.4rem 0.33rem;        
+    }
+   .partner-with-us h2{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .inp-form{
+        display: flex;
+        flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
+
+    input[type=date]{
+        width: 17.5rem;
+        margin-right: 1rem;
+    }
+    .gender-age{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txtarea{
+    
+        width: 20rem;
+    }
+
+    .copyright-text p{
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 500px){
+    .heading h1{
+        font-size: 2rem;
+    }
+    .contact-icons{
+        font-size: 1.3rem;
+        /* padding: 0.5rem 0.33rem;   */
+        /* width: 2rem;  */
+        padding: 0.5rem 0;
+        min-width: 3rem;
+    }
+    .contact-element h3{
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+    }
+
+    .inp-form{
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type=date]{
+        width: 17.5rem;}
+}
+

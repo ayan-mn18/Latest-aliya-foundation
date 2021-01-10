@@ -1,0 +1,643 @@
+*{
+    margin : 0;
+    padding : 0 ;
+    font-family: 'poppins', sans-serif;
+}
+
+#banner {
+    /* background-image: linear-gradient(  rgba(0,0,0,0) ,rgba(119 ,219 ,219 , 0.5)  ) ,linear-gradient(rgba(255, 20, 147 ,0.5) ,  rgba(0,0,0,0)) , url(imgs/slider1.jpeg); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    transition: background-image 2s ;
+    /* position: fixed;
+    z-index: 0; */
+    background-attachment: fixed;
+    display: flex;
+    overflow-x: hidden;
+}
+
+#banner .logo{
+    height: 3rem;
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    z-index: 10000000;
+}
+.banner-txt{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    text-align: center;
+    display: flex;
+    opacity: 0.9;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.banner-txt h1 {
+    font-size: 86px;
+    color:#fff;
+    font-family: 'Kaushan Script', cursive; 
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-txt p {
+    font-size : 28px;
+    color: #fff;
+    padding: 14px;
+}
+
+.banner-txt a{
+    text-decoration: none;
+    padding: 11px;
+    margin: 15px;
+    display: inline-block;
+    border: 0.5px solid #fff;
+    color:#fff;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+    box-sizing: border-box;
+    margin: 1em;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    height: 80px; 
+    width: 480px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.btns a{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.banner-txt a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+    transform-origin: left;
+    z-index: -1;   
+}
+.banner-txt a:hover span{
+    width: 100%;
+    height: 100%;
+}
+.banner-txt a:hover {
+    color: black;
+}
+.sidenav{
+    position: absolute;
+    height: 100vh;
+    z-index: 10000000000000;
+    right: 0;
+    top: 0; 
+    background-color: #009688;
+    width: 0px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    opacity: 0.95;
+}
+
+.sidenav ul {
+    position: fixed;
+}
+.sidenav ul li 
+{
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 25%;
+    
+}
+.sidenav ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.menu-btn {
+    position: absolute;
+    top : 6%;
+    right: 2%;
+    width: 25px;
+    padding: 10px;
+    z-index: 3;
+    cursor: pointer;
+    position: fixed;
+    opacity: 0.95;
+    border-radius: 50%;
+    background-color: rgba(255, 20, 147 ,0.2);
+}
+
+
+
+/* Recent Activities Seection */
+
+.recent-activities-section h1{
+    font-size: 5.5em;
+    font-weight: 100;
+    padding: 1.5em;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    color: #009686;
+    text-shadow: 2px 3px 4px #0096bb;
+}
+
+
+/* Our Initiatives Style */
+
+.our-initiatives-section h1{
+    font-size: 5.5em;
+    font-weight: 100;
+    padding: 1.5em;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    color: #009686;
+    text-shadow: 2px 3px 4px #0096bb;
+}
+
+.our-initiatives-1 , .our-initiatives-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+.our-initiatives-2{
+    margin-bottom: 1em;
+}
+.photo-in-1
+{
+    padding: 5px;
+    position: relative;
+}
+
+.photo-in-1 img{
+    background-color: white;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    height: 25rem;
+    width: 20rem;
+}
+
+.photo-in-1::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 85%;
+    width: 18rem;
+    border: 10px solid  #009686;
+    z-index: -1;
+}
+
+
+
+.desc-in-1 h2{
+    padding: 0 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 20, 147 ,0.5) ;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.9rem;
+}
+.desc-in-1 p{    
+    width: 44vw;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    font-size: 1rem;
+}
+
+.desc-in-1 {
+    margin-top: 2rem;
+}
+
+
+.knowmore-btn1
+{
+    height: 2rem;
+    width: 3.5rem;
+    background: transparent;
+    padding :1rem 2.6rem;
+    margin: 1.5rem;
+    border: 0.8px solid rgba(255, 20, 147 ,0.5);
+    cursor: pointer;
+    color: rgba(255, 20, 147 ,0.7) ;
+    text-decoration: none;
+    position: relative;
+}
+
+.knowmore-btn1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:  rgba(255, 20, 147 ,0.5);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.knowmore-btn1:hover span{
+    width: 100%;
+}
+
+.knowmore-btn1:hover
+{
+    color: #fff;
+}
+
+
+
+
+/* Feedback Form Styles */
+/* Form Styles */
+
+
+
+#feed-form{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color: rgba(255, 20, 147 ,0.15);
+}
+
+#feed-form h1{
+    font-size: 5.5em;
+    font-weight: 100;
+    padding: 0 2rem;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    padding: 1em;
+    color: #009686;
+    text-shadow: 2px 3px 4px #0096bb;    
+}
+
+.inp-form
+{   
+    margin-bottom: 1rem;
+    border: #fff;
+    transition: 1s ease;
+}
+
+input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+input[type=text]
+{
+    
+    align-items: stretch;
+    width: 30rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=text]:focus
+{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.num
+{
+    width: 30rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.num:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.email-id
+{
+    
+    width: 30rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.email-id:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.txtarea
+{
+    padding : 10px;
+    width: 30rem;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.txtarea:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.feed-h2
+{
+    font-size: 60px;
+    align-items: center;
+    margin-left: 13vw;
+    margin-bottom: 60px;
+    font-weight: 250;
+    color: rgba(0,150,134,0.5) ;
+    text-shadow: 2px 3px 4px rgba(0,150,134,0.2);
+}
+
+.submitBtn
+{
+    display: inline-block;
+    /* padding: 15px 25px; */
+    width: 15rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    outline: none;
+    border: 1px solid rgba(255, 20, 147);
+    padding: 0px 40px;
+}
+.submitBtn:hover
+{
+    background-color: rgba(0,150,134,0.4);
+    border: rgba(0,150,134,1);
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+/* Form Style Ends */
+
+
+/* Footer Section */
+
+#footer{
+    padding: 2rem;
+    background-color: rgba(255, 20, 147, 0.4);
+}
+
+#footer ul li{
+    list-style-type: none;
+}
+
+
+
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer a:hover{
+    opacity: 0.7;
+}
+
+
+.footer-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.copyright-text{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.social-icons-size{
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    opacity: 1;
+    text-align: center;
+}
+
+.social-icons-size i:hover{
+    opacity: 0.7;
+}
+
+.our-initiatives, .contact-us{
+    padding: 1rem;
+}
+
+/* Footer Ends Here */
+
+/* - - - - - - - - - - -  media queries - - - - - - - - - -  */
+
+/* Banner Media Querries */
+
+@media (max-width:1122px) {
+    .banner-txt h1{
+        font-size: 70px;
+    }
+    .banner-txt a{
+        padding: 10px;
+        margin: 10px;
+    }
+    .btns{
+        height: 68px;
+        width: 440px;
+    }
+}
+@media (max-width:716px) {
+    .banner-txt h1{
+        font-size: 55px ;
+    }
+    .banner-txt p{
+        font-size: 20px;
+    }
+
+}
+@media (max-width:560px){
+    .banner-txt h1{
+        font-size: 47px ;
+    }
+    .banner-txt p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:450px){
+    .banner-txt h1{
+        font-size: 40px ;
+    }
+    .banner-txt p{
+        font-size: 20px;
+    }
+}
+@media (max-width:408px){
+    .btns{
+        display: block;
+
+    }
+}
+@media (max-width:380px){
+    .banner-txt h1{
+        font-size: 35px ;
+    }
+    .banner-txt p{
+        font-size: 15px;
+    }
+    .banner-txt a{
+        width: 38vw;
+        padding: 3px;
+        margin: 0px;
+    
+    }
+    .btns{
+        height: 40px;
+        width: 480px;
+
+    }
+}
+
+/* Banner Media Querries Ends */
+
+/* Media Querries for Our Initiatives Section*/
+
+@media (max-width: 904px){
+    
+    .our-initiatives-1, .our-initiatives-2{
+        margin: 3rem 0.5rem;
+        
+    }
+
+    
+    .our-initiatives-2{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        
+    }
+
+    .desc-in-1 h2{
+        padding: 0 1.5rem;
+        font-size: 1.5rem;
+    }
+    .desc-in-1 p{
+        width: 20rem;
+        padding: 1rem;
+        margin: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+
+
+    .photo-in-1 img{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        padding: 0.5rem;
+        height: 18rem;
+        width: 14rem;
+    }
+    
+    .photo-in-1::after
+    {
+        height: 85%;
+        width: 13rem;
+    }
+    
+}
+
+
+@media (max-width: 681px){
+    .our-initiatives-section h1{
+        font-size: 2.1rem;
+    }
+
+    .recent-activities-section h1, .our-initiatives-section h1{
+        font-size: 2.1rem;
+    }
+
+    .desc-in-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .desc-in-1 p{
+        width: 20rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .knowmore-btn1{
+        height: 1rem;
+        width: 5rem;
+        font-size: 0.8rem;
+        padding :1.2rem 2rem;
+        text-transform: uppercase;
+    }
+
+}
+/* Our Initiative Media Querry Ends Here */
+
+/* Form Media Querries */
+
+@media (max-width: 500px){
+
+    .inp-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txtarea{
+        width: 20rem;
+    }
+
+    input[type=text]{
+        width: 20rem;
+}
+
+    .email-id{
+        width: 20rem;
+    }
+}
+
+/* Form Media Querries Hends Here */
+
