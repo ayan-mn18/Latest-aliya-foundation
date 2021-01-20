@@ -41,7 +41,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 
-const PORT = 3000 ;
+const PORT = process.env.PORT || 3000 ;
 
 //Mongo URI
 const MongoURI = 'mongodb+srv://Bizer44:sexyboltenabhai@cluster0.rzwrw.mongodb.net/mongoupload_aliya?retryWrites=true&w=majority';
