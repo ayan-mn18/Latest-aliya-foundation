@@ -87,7 +87,7 @@ app.get('/our-initiatives-food-distribution-center' ,(req,res)=>{
     res.render('fooddistri')
 })
 
-app.get('/admin' ,(req,res) =>{
+app.get('/ahfsecure' ,(req,res) =>{
     res.render('admin')
 })
 
